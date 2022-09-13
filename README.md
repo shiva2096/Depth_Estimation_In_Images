@@ -36,18 +36,18 @@ We will be using the Middlebury database. It provides calibrated images taken fr
 ### Results
 
 <p align="center">
-  <img src="./images/bike/im0.png" width="500" />
-  <img src="./results/window_size_5/bike/bike_depth_flag.png" width="500" />
-  <img src="./results/window_size_5/bike/bike_depth_prism.png" width="500" />
+  <img src="./images/bike/im0.png" width="300" />
+  <img src="./results/window_size_5/bike/bike_depth_flag.png" width="300" />
+  <img src="./results/window_size_5/bike/bike_depth_prism.png" width="300" />
   <br/>
   Output Img 1
 </p>
 
 
 <p align="center">
-  <img src="./images/cable_perfect/im0.png" width="500" />
-  <img src="./results/window_size_5/model_perfect/model_perfect_depth_flag.png" width="500" />
-  <img src="./results/window_size_5/model_perfect/model_perfect_depth_prism.png" width="500" />
+  <img src="./images/cable_perfect/im0.png" width="300" />
+  <img src="./results/window_size_5/model_perfect/model_perfect_depth_flag.png" width="300" />
+  <img src="./results/window_size_5/model_perfect/model_perfect_depth_prism.png" width="300" />
   <br/>
   Output Img 2
 </p>
