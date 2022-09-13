@@ -1,5 +1,5 @@
 # Depth Estimation in Images using Stereo
--------
+<hr>
 ### Objective
 Using a single camera it is not possible to estimate the distance of point P from the camera located at point O. All of the points in the projective line that P belongs to will map to the same points p in the image. Therefore, making it impossible to estimate the distance.
 <p align="center">
