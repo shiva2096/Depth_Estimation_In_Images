@@ -52,3 +52,29 @@ We will be using the Middlebury database. It provides calibrated images taken fr
   Output Img 2
 </p>
 
+
+### Observations
+
+- Depth of pixels are easier to interpret with colormaps as compared to the Grayscale images.
+- Results are much better when the window size is 5x5, this is because the smaller window is able to capture much more variations in the images.
+- However, the smaller window size brings in a lot of noise in the resulting image.
+- cmap Prism represents the portions of the image in red which are closer to the viewer and in blue which are away from the viewer.
+- cmap Flag represents the portions of the image in dark blue which are closer to the viewer and in white and red which are away from the viewer.
+- The depth map is heavily affected by shadows in the input image. In the original image above, there is only one wall in the background, however the depth shows it as two walls.
+- Disparities are more accurate when there are different textures inside a window.
+
+
+### Strenght & Weaknesses
+
+#### Strengths:
+- Works on both 2D and 3D images without specifying anything.
+- Good visual results for depth of pixels.
+- The parallel computation implemented significantly speeds up the execution.
+
+#### Weaknesses:
+- Only for parallel translated captured images.
+- No camera calibration therefore there might be bit poor results.
+- Even though we calculated disparity in parallel, it still takes some time to perform the calculations.
+
+
+
