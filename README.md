@@ -77,4 +77,8 @@ We will be using the Middlebury database. It provides calibrated images taken fr
 - Even though we calculated disparity in parallel, it still takes some time to perform the calculations.
 
 
+### Conclusion & Future Work
 
+In conclusion, we are very satisfied with the results we got. This is what we expected. We obviously faced several challenges throughout the implementation, however we overcame them. We also gained a lot of significant insight into stereo systems and depth estimation. How it works, what are the strengths, weakness in such a project.
+
+There is definitely room for improvement, in terms of performance we might want to speed up the process of calculating disparity values in the future. In addition this project can be extended to use more of epipolar geometry and perform depth calculation from two images that are not parallel and calibrated. This would definitely be very interesting to implement. Also, in future we can formulate and implement an adaptive window approach and see the results.
