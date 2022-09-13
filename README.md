@@ -1,6 +1,8 @@
 # Depth Estimation in Images using Stereo
---------
+
 ### Objective
+---
+
 Using a single camera it is not possible to estimate the distance of point P from the camera located at point O. All of the points in the projective line that P belongs to will map to the same points p in the image. Therefore, making it impossible to estimate the distance.
 <p align="center">
   <img src="./images/helper_images/Img1.png" width="500" />
@@ -18,12 +20,14 @@ However there is a solution to this problem, a stereo camera system can be used.
 
 
 ### Data Source 
+---
 We will be using the Middlebury database. It provides calibrated images taken from parallel cameras.
 
 => https://vision.middlebury.edu/stereo/data/scenes2014/
 
 
 ### Depth Calculation
+---
 
 - Re-sizing stereo images to be of the same size (500, w). Here we used the cv2.resize() function to perform this action. This also helped in faster processing as originally the images were around (2000, 2000). Function ⇒ resizeImage().
 - Once we have the stereo images of the same size, for each window patch in the left image, its correspondence location in the right image is retrieved by using normalized cross-correlation over the epipolar line. Functions ⇒ get_disparity_parallel(), compute_row() and norm_cross_correlation().
@@ -34,6 +38,7 @@ We will be using the Middlebury database. It provides calibrated images taken fr
 
 
 ### Results
+---
 
 <p align="center">
   <img src="./images/bike/im0.png" width="300" />
@@ -54,6 +59,7 @@ We will be using the Middlebury database. It provides calibrated images taken fr
 
 
 ### Observations
+---
 
 - Depth of pixels are easier to interpret with colormaps as compared to the Grayscale images.
 - Results are much better when the window size is 5x5, this is because the smaller window is able to capture much more variations in the images.
@@ -65,6 +71,7 @@ We will be using the Middlebury database. It provides calibrated images taken fr
 
 
 ### Strenght & Weaknesses
+---
 
 #### Strengths:
 - Works on both 2D and 3D images without specifying anything.
@@ -78,6 +85,7 @@ We will be using the Middlebury database. It provides calibrated images taken fr
 
 
 ### Conclusion & Future Work
+---
 
 In conclusion, we are very satisfied with the results we got. This is what we expected. We obviously faced several challenges throughout the implementation, however we overcame them. We also gained a lot of significant insight into stereo systems and depth estimation. How it works, what are the strengths, weakness in such a project.
 
