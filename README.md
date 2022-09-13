@@ -7,5 +7,6 @@ Using a single camera it is not possible to estimate the distance of point P fro
 
 However there is a solution to this problem, a stereo camera system can be used. Here we explore how we can use a parallel camera system to estimate depth of objects in an image from scratch, without using any libraries.
 
+<img src="./images/helper_images/Binocular-stereo-vision.png" width="500" />
 
 Data Source => https://vision.middlebury.edu/stereo/data/scenes2014/
